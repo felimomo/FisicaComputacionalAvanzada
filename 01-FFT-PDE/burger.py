@@ -34,7 +34,8 @@ k = scipy.fft.rfftfreq(N, 1./N)
 print('Frecuencias k usadas:')
 print(k)
 
-f0 = FFT(np.sin(X))
+# f0 = FFT(np.sin(X))
+f0 = FFT(np.exp(-(X-np.pi) ** 2))
 VISC = 0.1
 
 def G(t, u: np.ndarray, homogenea: bool = False):
@@ -94,9 +95,9 @@ def main():
 	plt.tight_layout()
 
 	if HOMOGENEA:
-		plt.savefig('homogenea.png')
+		plt.savefig('new_homogenea.png')
 	else:
-		plt.savefig('fuente.png')
+		plt.savefig('new_fuente.png')
 
 
 if __name__=='__main__':
