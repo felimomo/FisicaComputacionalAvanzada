@@ -4,7 +4,7 @@ import torch
 
 mps_device = torch.device("mps")
 
-dim = 15000
+dim = 512
 normalizer = dim ** 0.75
 
 # on GPU
