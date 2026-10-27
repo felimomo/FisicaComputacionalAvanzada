@@ -12,7 +12,7 @@ img1[m1:m1+dm, m1:m1+dm] = 150 * np.ones((dm,dm))
 Image.fromarray(
 	img1.astype(np.uint8), 
 	mode='L'
-).save('original.png')
+).save('images/original.png')
 
 n = 32
 
@@ -82,4 +82,4 @@ conv_images = {
 }
 
 for name, img in conv_images.items():
-	img.save(f'{name}-conv.png')
+	img.save(f'images/out/{name}-conv.png')
