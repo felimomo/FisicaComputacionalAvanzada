@@ -1,0 +1,12 @@
+name: conv
+channels:
+  - conda-forge
+  - nodefaults        # avoid the anaconda defaults channel
+dependencies:
+  - python=3.12
+  - numpy
+  - scipy
+  - pandas
+  - matplotlib
+  - seaborn
+  - pillow
